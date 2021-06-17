@@ -1,0 +1,151 @@
+@charset "UTF-8";
+/* Body */
+html {
+  scroll-behavior: smooth;
+}
+body {
+	margin: 0;
+color: #e9e1da;
+font-family: catamaran;
+}
+.inv { display: none; text-align: center; margin: auto; margin-top: 600px; font-size: 20px; color: #fff;}
+
+@keyframes up-down{
+  from{
+    transform: translatey(0px);
+  }
+  to{
+    transform: translatey(-30px);
+  }
+}
+
+a{text-decoration: none; color: #e9e1da; }
+
+.close:hover {color:#0c9085; }
+.open:hover {color:#0c9085; }
+
+.tool {width: 1902px; height: 3200px;}
+.mai {width: 1902px; height: 1180px;
+	 background-image: url("mai.jpg");
+	 background-repeat: no-repeat;}
+.mid {width: 1902px; height: 2230px;}
+.fot {width: 1902px; height: 300px; text-align: center;}
+.desk {margin: 10px;}
+#desk {margin: 20px;}
+.mainlog {position: absolute; top: 325px; left: 401px;}
+.topgo {font-size: 20px; position: fixed; top: 90%; right: 7%; z-index: 6;}
+
+
+input[id="taa01"]:checked ~ .conn1 {display: block;}
+input[id="taa02"]:checked ~ .conn2 {display: block;}
+input[id="taa03"]:checked ~ .conn3 {display: block;}
+input[id="taa04"]:checked ~ .conn4 {display: block;}
+
+input[id="taao01"]:checked ~ .conn1 {display: none;}
+input[id="taao01"]:checked ~ .conn2 {display: none;}
+input[id="taao01"]:checked ~ .conn3 {display: none;}
+input[id="taao01"]:checked ~ .conn4 {display: none;}
+
+input[type="radio"] {display: none;}
+
+.in {cursor: pointer;}
+.sa {position: relative;}
+.box1 {width: 280px; height: 570px; border: 0px solid black;  margin: auto; position: absolute; top: 170px; left: 370px; background-color: #136f63;}
+.box2 {width: 280px; height: 570px; border: 0px solid black; margin: auto; position: absolute; top: 170px; left: 660px; background-color: #12655a; }
+.box3 {width: 280px; height: 570px; border: 0px solid black;  margin: auto; position: absolute; top: 170px; left: 950px; background-color: #105a50;  }
+.box4 {width: 280px; height: 570px; border: 0px solid black;  margin: auto; position: absolute; top: 170px; left: 1240px; background-color: #0e5046; }
+.conboxx {width: 1166px; height: 570px;  display: none; z-index: 10; margin: auto; margin-top: 170px; margin-left: 357px; position: absolute; text-align: center; border: 0px solid; z-index: 0;}
+.bg {width: 100%; height: 100%; }
+.bg1 {width: 100%; height: 100%; }
+.text1 {font-size: 14px;  font-family: 맑은 고딕; margin: auto; position: absolute; top:200px; left: 30px;}
+.text2 {font-size: 14px;  font-family: 맑은 고딕; margin: auto; position: absolute; top:80px; left: 30px;}
+.text3 {font-size: 14px;  font-family: 맑은 고딕; margin: auto; padding-top: 70px; text-align: center;}
+.text4 {font-size: 18px;  font-family: 맑은 고딕; margin: auto; padding-top: 480px; text-align: center; font-weight: bolder;}
+.close {margin: 0px; position: absolute; top:20px; right: 20px; z-index: 5;}
+.titi {font-size: 25px;}
+.inimg1 {width: 400px; height: 443px; position: absolute; right: 50px; top:80px; animation: up-down 1.4s infinite ease-in-out alternate;}
+.neyo {text-align: center; margin: auto; margin-top: 80%; font-size: 20px; font-weight: bolder;}
+.neyo1 {font-size: 35px;}
+.inimg2 {margin-top: 030px;}
+.vivi {position: absolute; top: 134px; left: 260px; text-align: center;}
+.inimg3 {padding: 30px;  animation: up-down 1.4s infinite ease-in-out alternate;}
+.inimg4 {padding: 30px;  animation: up-down 1.3s infinite ease-in-out alternate;}
+.inimg5 {padding: 30px;  animation: up-down 1.6s infinite ease-in-out alternate;}
+.leimg {text-align: center; margin-top: 50px;}
+
+
+input[id="menuicon"]{display: none;}
+input[id="menuicon"] ~ .open {display: block; width: 40px; height: 330px; position:fixed; right: 113px; top: calc(50% - 165px); cursor: pointer; z-index: 2;}
+input[id="menuicon"] ~ .close { width: 40px; height: 330px; position:fixed; right: -113px; top: calc(50% - 165px); cursor: pointer; z-index: 2;}
+
+.menufont {font-size: 35px;}
+.sidebar {width: 745px; height: 990px; background:#0b1715; position: fixed; top: 0; right: -745px; z-index: 1; transition: all .35s; opacity: 90%;}
+.sidebar1 {width: 600px; height: 990px; position: fixed; top: 275px; right: -745px; z-index: 1; transition: all .35s; opacity: 100%; font-size: 35px; padding: 50px;}
+input[id="menuicon"]:checked + label {display: none;}
+input[id="menuicon"]:checked ~ .close {display: block;  z-index: 2; right: 113px;}
+input[id="menuicon"]:checked + label ~ .sidebar {right: 0;}
+input[id="menuicon"]:checked ~ .sidebar1 {right: 0px;}
+
+#trait {font-family: catamaran; font-size: 40px; margin: auto; text-align: center; position: relative; top:50px;}
+#news {font-family: catamaran; font-size: 40px; margin: auto; text-align: center; margin-top: 800px; padding-top: 100px;}
+.line1 {background-color: #e9e1da; width: 1716px; height: 3px; margin: auto; margin-top: 100px; opacity: 50%; display: none;}
+.line2 {background-color: #e9e1da; width: 1716px; height: 3px; margin: auto;margin-top: 10px; }
+.line3 {background-color: #e9e1da; width: 1716px; height: 3px; margin: auto; margin-top: 90px;}
+
+label[for*="ta0"]:hover {transform: scale(1.4);}
+label[for*="tap0"]:hover {transform: scale(1.4);}
+
+.tab_content {position: relative; top: 50px;}
+
+label[for*="tab0"] { border-radius: 50px; width: 80px;  text-align: center; margin-top: 50px; }
+input[type="radio"] {display:none;}
+input[type="radio"] + label { display: inline-block; padding: 10px 50px 10px 50px; border: 2px solid; border-color:#0c9085; font-size: 20px; cursor: pointer; opacity: 50%;  position: relative; left: 720px; margin-right: 100px;}
+input[type="radio"]:checked + label { color:#e9e1da; opacity: 100%;}
+
+.conbox {width: 1463px; height: 400px; margin: 0 auto;  border: 0px solid #0c9085; border-radius: 0px 30px 30px 30px; display: none;}
+input[id="tab01"]:checked ~ .con1 {display: block;}
+input[id="tab02"]:checked ~ .con2 {display: block;}
+
+.conbox1 {width: 1150px; height: 240px; border: 0px solid #0c9085; border-right: 0px;  display: none; position: relative; top: 60px; left: 150px;}
+.btn1 {padding: 10px; text-align: center;}
+label[for*="ta0"]{display: inline-block; padding: 0px; cursor: pointer; margin: 0px; position: relative; top:200px;}
+input[id="ta01"]:checked ~ .co1 {display: block;}
+input[id="ta02"]:checked ~ .co2 {display: block;}
+input[id="ta03"]:checked ~ .co3 {display: block;}
+input[id="ta04"]:checked ~ .co4 {display: block;}
+input[id="ta05"]:checked ~ .co5 {display: block;}
+input[id="ta06"]:checked ~ .co6 {display: block;}
+input[id="ta07"]:checked ~ .co7 {display: block;}
+input[id="ta08"]:checked ~ .co8 {display: block;}
+input[id="ta09"]:checked ~ .co9 {display: block;}
+input[id="ta010"]:checked ~ .co10 {display: block;}
+input[id="ta011"]:checked ~ .co11 {display: block;}
+input[id="ta012"]:checked ~ .co12 {display: block;}
+input[id="ta013"]:checked ~ .co13 {display: block;}
+
+.conbox2 {width: 1150px; height: 240px; border: px solid #0c9085; border-right: 0px;  display: none; position: relative; top: 60px; left: 150px;}
+.btn2 {padding: 10px; text-align: center;}
+label[for*="tap0"]{display: inline-block; padding: 0px; cursor: pointer; margin: 0px; position: relative; top:200px;}
+input[id="tap01"]:checked ~ .co1 {display: block;}
+input[id="tap02"]:checked ~ .co2 {display: block;}
+input[id="tap03"]:checked ~ .co3 {display: block;}
+input[id="tap04"]:checked ~ .co4 {display: block;}
+input[id="tap05"]:checked ~ .co5 {display: block;}
+input[id="tap06"]:checked ~ .co6 {display: block;}
+input[id="tap07"]:checked ~ .co7 {display: block;}
+input[id="tap08"]:checked ~ .co8 {display: block;}
+input[id="tap09"]:checked ~ .co9 {display: block;}
+input[id="tap010"]:checked ~ .co10 {display: block;}
+input[id="tap011"]:checked ~ .co11 {display: block;}
+input[id="tap012"]:checked ~ .co12 {display: block;}
+input[id="tap013"]:checked ~ .co13 {display: block;}
+input[id="tap014"]:checked ~ .co14 {display: block;}
+
+.inin {position: relative; right: 100px; top: 25px;}
+.kaka {width: 930px; position: absolute; top: 60px; left: 150px;}
+.gege {font-size:22px;font-family: 한글틀고딕;}
+.yeye {font-size: 20px; color: #0c9085;font-family: 한글틀고딕;}
+.nene {font-size: 16px; font-family: 한글틀고딕;}
+.riotlogo {margin: auto; text-align: center; width: 150px; margin-top: 170px;}
+
+.last {transition: 1.5s;}
